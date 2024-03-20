@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+
+COPY target/eureka-client1.jar customer-server-1.0.0.jar
+ENTRYPOINT ["java","-jar","/customer-server-1.0.0.jar"]
